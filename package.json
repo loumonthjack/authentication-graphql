@@ -6,6 +6,7 @@
   "scripts": {
     "start:dev": "nodemon src/server.ts",
     "start": "ts-node src/server.ts",
+    "generate": "prisma generate",
     "migrate:dev": "prisma migrate dev --name init",
     "migrate:reset": "prisma migrate reset",
     "migrate:deploy": "prisma migrate deploy"
