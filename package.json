@@ -1,0 +1,35 @@
+{
+  "name": "authentication-graphql",
+  "version": "1.0.0",
+  "description": "record-me",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon src/server.ts",
+    "start": "ts-node src/server.ts",
+    "migrate:dev": "prisma migrate dev --name init",
+    "migrate:reset": "prisma migrate reset",
+    "migrate:deploy": "prisma migrate deploy"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.10.1",
+    "apollo-server-express": "^3.11.1",
+    "apollo-server-plugin-http-headers": "^0.1.4",
+    "bcrypt": "^5.1.0",
+    "cuid": "^3.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "graphql-middleware": "^6.1.33",
+    "graphql-shield": "^7.6.5",
+    "jsonwebtoken": "^9.0.0",
+    "nodemon": "^2.0.20",
+    "prisma": "^4.10.1",
+    "typescript": "^4.9.5",
+    "zod": "^3.20.6"
+  },
+  "devDependencies": {
+    "ts-node": "^10.4.0"
+  }
+}
