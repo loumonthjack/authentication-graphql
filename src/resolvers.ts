@@ -9,8 +9,7 @@ const resolvers = {
     Query: {
         whoami: async (parent: any, args: any, ctx: { token: string; }, info: any) => {
             try {
-                const token = ctx.token;
-                const user = await User.getByToken(token);
+                const user = await User.getByToken(ctx.token);
                 if (!user) {
                     throw new Error("Not authenticated");
                 }
